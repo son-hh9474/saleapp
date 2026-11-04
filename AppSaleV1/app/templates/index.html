@@ -57,7 +57,11 @@
     <div class="alert alert-warning mt-4">Không có sản phẩm nào</div>
     {% endif %}
 
-
+    <ul class="pagination">
+        {% for i in range(1, page + 1) %}
+        <li class="page-item"><a class="page-link" href="/?page={{i}}">{{i}}</a></li>
+        {% endfor %}
+    </ul>
 </section>
 
 <footer>
